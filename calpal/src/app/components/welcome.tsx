@@ -1,5 +1,6 @@
 'use client'
 import Button from './button';
+import Link from 'next/link';
 
 export default function Welcome() {
 
@@ -25,14 +26,14 @@ export default function Welcome() {
                         </h2>
                     </div>
                     <div>
-                        <button className=" hover:bg-sand focus:outline-none focus:ring-4 focus:ring-blue-300 px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white font-roboto h-16 w-60 rounded-3xl font-light text-3xl bg-clay p-4 hover:dark-brown">
+                        <Link href="/register" className=" hover:bg-sand focus:outline-none focus:ring-4 focus:ring-blue-300 px-20 py-3 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white font-roboto rounded-3xl font-light text-3xl bg-clay hover:dark-brown">
                             Join 
-                        </button>
+                        </Link>
 
                     </div>
                     <div>
-                        <h3 className="text-white text-lg">
-                            Have an account? <a href="/signin" className="text-light-green hover:underline py-5">Sign in</a>
+                        <h3 className="text-white text-lg pt-4">
+                            Have an account? <a href="/login" className="text-light-green hover:underline py-5">Sign in</a>
                         </h3>
                     </div>
                 </div>
