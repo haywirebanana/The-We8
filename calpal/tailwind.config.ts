@@ -7,6 +7,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'montserrat': ['Montserrat', 'sans-serif'],
+      // You can define other font families here as well
+    },
     colors: {
 //      transparent: 'transparent',
 //      current: 'currentColor',
