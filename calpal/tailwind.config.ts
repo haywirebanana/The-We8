@@ -13,8 +13,8 @@ const config: Config = {
       },
     },
     colors: {
-//      transparent: 'transparent',
-//      current: 'currentColor',
+      transparent: 'transparent',
+      current: 'currentColor',
       'dark-green': '#283618',
       'forest-green': '#606C38',
       'green': '#CCD5AE',
@@ -26,6 +26,8 @@ const config: Config = {
       'white': '#FFFFFF',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 };
 export default config;
