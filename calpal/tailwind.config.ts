@@ -7,9 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        roboto: ['roboto-serif'],
+      },
+    },
     colors: {
-//      transparent: 'transparent',
-//      current: 'currentColor',
+      transparent: 'transparent',
+      current: 'currentColor',
       'dark-green': '#283618',
       'forest-green': '#606C38',
       'green': '#CCD5AE',
@@ -19,8 +25,11 @@ const config: Config = {
       'cream': '#FAEDCD',
       'light-cream': '#FEFAE0',
       'white': '#FFFFFF',
+      'dark-brown': '#99571D'
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 };
 export default config;

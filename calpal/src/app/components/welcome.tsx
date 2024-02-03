@@ -3,27 +3,35 @@ import Image from "next/image";
 
 export default function Welcome() {
     return (
-        <div className="flex h-3753 flex-row items-center justify-between bg-forest-green">
-                <div className="flex flex-col h-full w-1/2 justify-between py-5">
-                        <header className="text-white font-serif text-4xl font-normal">
+        <div className="flex h-dvh flex-row items-center bg-forest-green">
+                <div className="flex flex-col h-5/6 w-1/2 align-center justify-center pl-24 mb-28">
+                    <div>
+                        <header className="text-white w-96 font-serif text-7xl font-normal py-4 leading-14">
                             Welcome to CalPal
                         </header>
-                        <h2 className="text-white font-montserrat text-lg font-normal leading-5">
+                    </div>
+                    <div>
+                        <h2 className="text-white font-sans font-light w-112 text-2xl leading-8 pb-10">
                             Lorem ipsum dolor sit amet, 
                             consectetur adipiscing elit, sed do 
                             eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua.
                         </h2>
-                        <button className="h-150 w-60 rounded-lg bg-sand p-4">
+                    </div>
+                    <div>
+                        <button className="text-white font-roboto h-16 w-60 rounded-3xl font-light text-3xl bg-clay p-4 hover:dark-brown">
                             Join 
                         </button>
-                        <h3>
-                            Have an account? <a href="/signin" className="hover:underline">Sign in</a>
+                    </div>
+                    <div>
+                        <h3 className="text-white text-lg">
+                            Have an account? <a href="/signin" className="text-light-green hover:underline py-5">Sign in</a>
                         </h3>
+                    </div>
                 </div>
-                <div className="w-1/2">
+                {/* <div className="w-1/2">
                     we will add something here
-                </div>
+                </div> */}
         </div>
     );
 }

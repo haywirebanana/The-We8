@@ -7,8 +7,8 @@ import Banner from "./components/banner";
 
 export default function Landing() {
     return (
-        <div className="h-3753">
-            <Welcome />
+        <div className="">
+            <Welcome/>
             <Mission />
             <Stats />
             <How />
