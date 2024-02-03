@@ -4,14 +4,18 @@ import Mission from "./components/mission";
 import Stats from "./components/stats";
 import How from "./components/how";
 import Banner from "./components/banner";
+import DivideLine from "./components/divideLine";
 
 export default function Landing() {
   return (
-    <div className="">
+    <div className=" bg-white">
       <Welcome />
       <Mission />
+      <DivideLine />
       <Stats />
+      <DivideLine />
       <How />
+      <DivideLine />
       <Banner />
     </div>
   );
