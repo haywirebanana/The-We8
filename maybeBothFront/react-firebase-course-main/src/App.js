@@ -11,6 +11,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
+import NavBar from "./components/navBar";
 
 function App() {
   const [movieList, setMovieList] = useState([]);
@@ -82,7 +83,7 @@ function App() {
   return (
     <div className="App">
       <Auth />
-
+      <NavBar />
       <div>
         <input
           placeholder="Movie title..."
@@ -122,7 +123,6 @@ function App() {
           </div>
         ))}
       </div>
-
       <div>
         <input type="file" onChange={(e) => setFileUpload(e.target.files[0])} />
         <button onClick={uploadFile}> Upload File </button>

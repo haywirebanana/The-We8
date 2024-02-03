@@ -45,11 +45,19 @@ export const Auth = () => {
         type="password"
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={signIn}> Sign In</button>
 
       <button onClick={signInWithGoogle}> Sign In With Google</button>
 
       <button onClick={logout}> Logout </button>
+      <iframe
+        title="Embedded Website"
+        src="http://www.youtube.com/embed/kvxxVf3hktE"
+        width="800"
+        height="600"
+        frameBorder="0"
+        allowFullScreen
+        autoplay
+      />
     </div>
   );
 };
