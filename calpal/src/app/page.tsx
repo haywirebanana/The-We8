@@ -13,7 +13,9 @@ export default function Landing() {
       <Mission />
       <DivideLine />
       <Stats />
+      <DivideLine />
       <How />
+      <DivideLine />
       <Banner />
     </div>
   );
