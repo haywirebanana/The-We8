@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBWps88OUt3ePwW5qp8Scsqcsw_BeW9kJk",
+  apiKey: "null",
   authDomain: "thewe8-a1368.firebaseapp.com",
   databaseURL: "https://thewe8-a1368-default-rtdb.firebaseio.com",
   projectId: "thewe8-a1368",

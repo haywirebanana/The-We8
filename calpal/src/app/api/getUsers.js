@@ -12,6 +12,7 @@ export const GetUsers = async () => {
     }));
     //let ranked = rankMostMatchingEntries(filteredData[0], filteredData);
     console.log(filteredData);
+
     //setUserList(rankMostMatchingEntries(filteredData, filteredData[1]));
     return filteredData;
   } catch (err) {
@@ -27,6 +28,7 @@ export const CheckLogin = async (email, password) => {
       console.log(user);
       if (users[user].password == password && users[user].email == email) {
         console.log("Logged In");
+
         return true;
       }
     }

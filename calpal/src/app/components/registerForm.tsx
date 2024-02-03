@@ -15,7 +15,9 @@ const RegisterPage = () => {
   const handleSubmit = () => {
     //to be implemented
     console.log("Worked");
+
     addDataToFirestore();
+    window.location.replace("http://localhost:3000/");
   };
 
   return (
