@@ -11,16 +11,17 @@ export default function Mission() {
         we will add something here
       </div>
       <div className="flex flex-col h-full w-1/2 justify-between">
-        <header className="text-black font-serif text-4xl font-normal mt-[-20px]">
+        <header className="text-black w-112 font-serif text-5xl py-4">
           Mission
         </header>
-        <h2 className="text-black font-montserrat font-normal leading-5 pe-40 pt-10">
+
+        <h2 className="text-black font-montserrat text-2xl font-normal leading-5 pe-40 pt-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.
         </h2>
-        <h2 className="text-black font-montserrat font-normal leading-5 pe-40 pt-10">
+        <h2 className="text-black font-montserrat text-2xl font-normal leading-5 pe-40 pt-10">
           Lorem ipsum dolor sit amet, consecstetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
