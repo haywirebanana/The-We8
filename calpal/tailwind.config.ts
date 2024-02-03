@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
+        roboto: ['roboto-serif'],
       },
     },
     colors: {
@@ -24,6 +25,7 @@ const config: Config = {
       'cream': '#FAEDCD',
       'light-cream': '#FEFAE0',
       'white': '#FFFFFF',
+      'dark-brown': '#99571D'
     },
   },
   plugins: [],
