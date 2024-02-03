@@ -13,8 +13,10 @@ import {
 import { ref, uploadBytes } from "firebase/storage";
 import NavBar from "./components/navBar";
 
+import { rankMostMatchingEntries } from "./algorithms/sortingAlgorithm";
+
 function App() {
-  const [movieList, setMovieList] = useState([]);
+  const [userList, setUserList] = useState([]);
 
   // New Movie States
   const [newMovieTitle, setNewMovieTitle] = useState("");
@@ -27,34 +29,38 @@ function App() {
   // File Upload State
   const [fileUpload, setFileUpload] = useState(null);
 
-  const moviesCollectionRef = collection(db, "movies");
+  const usersCollected = collection(db, "user");
 
-  const getMovieList = async () => {
+  const getUsers = async () => {
     try {
-      const data = await getDocs(moviesCollectionRef);
+      const data = await getDocs(usersCollected);
+
       const filteredData = data.docs.map((doc) => ({
         ...doc.data(),
         id: doc.id,
       }));
-      setMovieList(filteredData);
+      //let ranked = rankMostMatchingEntries(filteredData[0], filteredData);
+      console.log(filteredData);
+      setUserList(rankMostMatchingEntries(filteredData, filteredData[1]));
+      console.log(userList);
     } catch (err) {
       console.error(err);
     }
   };
 
   useEffect(() => {
-    getMovieList();
+    getUsers();
   }, []);
 
   const onSubmitMovie = async () => {
     try {
-      await addDoc(moviesCollectionRef, {
+      await addDoc(usersCollected, {
         title: newMovieTitle,
         releaseDate: newReleaseDate,
         receivedAnOscar: isNewMovieOscar,
         userId: auth?.currentUser?.uid,
       });
-      getMovieList();
+      getUsers();
     } catch (err) {
       console.error(err);
     }
@@ -103,20 +109,20 @@ function App() {
         <button onClick={onSubmitMovie}> Submit Movie</button>
       </div>
       <div>
-        {movieList.map((movie) => (
+        {userList.map((user) => (
           <div>
-            <h1 style={{ color: movie.receivedAnOscar ? "green" : "red" }}>
-              {movie.title}
+            <h1 style={{ color: user.receivedAnOscar ? "green" : "red" }}>
+              {user.object.firstName}
             </h1>
-            <p> Date: {movie.releaseDate} </p>
+            <p> Birth Country: {user.object.birthCountry} </p>
 
-            <button onClick={() => deleteMovie(movie.id)}> Delete Movie</button>
+            <button onClick={() => deleteMovie(user.id)}> Delete Movie</button>
 
             <input
               placeholder="new title..."
               onChange={(e) => setUpdatedTitle(e.target.value)}
             />
-            <button onClick={() => updateMovieTitle(movie.id)}>
+            <button onClick={() => updateMovieTitle(user.id)}>
               {" "}
               Update Title
             </button>
