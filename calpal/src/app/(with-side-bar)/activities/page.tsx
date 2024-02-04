@@ -15,8 +15,7 @@ export default function Activities() {
                             height={300}>    
 
                         </Image>
-                        <div className="w-full justify-center overflow-scroll">
-
+                        <div className="w-full justify-center">
                         <Activity />
                         </div>
                     </div>

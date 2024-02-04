@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../../components/sidebar";
 import { DiGroovy } from "react-icons/di";
+import Image from "next/image";
 
 const TodoCard = ({ title, todos }) => {
   return (
@@ -25,10 +26,15 @@ export default function Activities() {
 
       <div className="w-full h-dvh">
         <div className="flex h-1/3 items-center justify-center bg-green">
-          <header className="text-white font-serif text-4xl font-normal">Name of Program</header>
-        </div>
+        <Image
+                            src='/images/banners/todos.png'
+                            alt="banner"
+                            width={2000}
+                            height={300}>    
 
-        <div className="flex flex-wrap overscroll-auto justify-center w-full max-h-[calc(100%-4rem)] py-8 bg-white gap-4">
+                        </Image>        </div>
+
+        <div className="flex flex-wrap overscroll-auto justify-center w-full max-h-[calc(100%-4rem)] py-8 bg-green gap-4">
           {/* Education Card */}
           <TodoCard
             title="Education"

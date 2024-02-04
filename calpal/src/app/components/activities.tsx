@@ -76,7 +76,7 @@ export default function Activities() {
 
 
     return (
-        <div className="flex h-screen pt-20 justify-center bg-green">
+        <div className="flex h-full py-8 justify-center bg-green">
             <div className="grid grid-cols-3 gap-4">
                 {data.map((activity, index) => (
                     <Card key={index} title={activity.title} image={activity.image} />
