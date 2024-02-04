@@ -1,13 +1,12 @@
 'use client'
 
-import Banner from "../components/banner";
-import Mentor from "../components/mentor";
-import List from "../components/list";
-import Sidebar from "../components/sidebar"
+import Banner from "../../components/banner";
+import Mentor from "../../components/mentor";
+import List from "../../components/list";
+import Sidebar from "../../components/sidebar"
 
-export default function Home() {
+export default function Dashboard() {
     return (
-
         <div className="flex flex-row min-h-screen">
             <Sidebar />
             <div className="w-full h-dvh">
@@ -24,7 +23,6 @@ export default function Home() {
             <div>
                 <List />
             </div>
-
         </div>
     );
 }

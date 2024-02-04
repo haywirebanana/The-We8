@@ -30,10 +30,12 @@ export default function Mission() {
           style={{ fontSize: "18px" }}
         >
           Our mission at CalPal is to empower newcomers in Calgary by fostering
-          meaningful connections with dedicated mentors. We strive to reduce the
-          challenges of settling into a new community by providing personalized
-          resources, facilitating connections with fellow newcomers, and
-          building a supportive network.
+          meaningful connections with dedicated mentors.
+          <br />
+          <br />
+          We strive to reduce the challenges of settling into a new community by
+          providing personalized resources, facilitating connections with fellow
+          newcomers, and building a supportive network.
           <br />
           <br />
           Through mentorship, we aim to inspire confidence, inclusion, and a

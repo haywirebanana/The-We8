@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang='en' style={{height: '100%', width: "100%"}}>
       <body className={inter.className}>
-        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>

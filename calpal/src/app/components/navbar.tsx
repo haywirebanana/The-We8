@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from 'react';
 import { usePathname} from 'next/navigation';
 
 const Navbar = () => {
@@ -23,7 +24,6 @@ const Navbar = () => {
           return 'Login';
       }
     };
-    
   return (
         <div className="flex-none flex flex-row justify-between bg-white py-3 pl-20">
             <div className="flex items-center w-5/6">
