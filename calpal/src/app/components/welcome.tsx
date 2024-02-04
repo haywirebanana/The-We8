@@ -44,6 +44,7 @@ export default function Welcome() {
       {/* <div className="w-1/2">
                     we will add something here
                 </div> */}
+
     </div>
   );
 }

@@ -1,26 +1,33 @@
-'use client'
+"use client";
 
 interface FieldProps {
-    labelName?: string;
-    fieldType: string;
-    fieldValue?: string;
-    onChange: (value: string) => void;
-    placeholderText?: string;
-  }
+  labelName?: string;
+  fieldType: string;
+  fieldValue?: string;
+  onChange: (value: string) => void;
+  placeholderText?: string;
+}
 
-export default function Field({ labelName, fieldType, fieldValue, onChange, placeholderText }: FieldProps) {
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        onChange(e.target.value);
-    }
+export default function Field({
+  labelName,
+  fieldType,
+  fieldValue,
+  onChange,
+  placeholderText,
+}: FieldProps) {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onChange(e.target.value);
+  };
 
-    return (
+  return (
     <div className=" w-full my-2">
       <label className="block text-sm font-medium text-gray-900">
         {labelName}
       </label>
-      <div className="relative mt-1 rounded-md shadow-sm">
+      <div className="relative mt-1 rounded-md">
         <input
           type={fieldType}
+          style={{ color: "black" }}
           name="label"
           value={fieldValue}
           onChange={handleChange}
@@ -29,5 +36,5 @@ export default function Field({ labelName, fieldType, fieldValue, onChange, plac
         />
       </div>
     </div>
-  )
+  );
 }

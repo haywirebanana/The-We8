@@ -16,9 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' style={{height: '100%', width: "100%"}}>
       <body className={inter.className}>
-        <Navbar />
         {children}
         <Footer />
       </body>

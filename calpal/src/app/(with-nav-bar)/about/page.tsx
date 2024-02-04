@@ -1,5 +1,5 @@
 'use client'
-import AboutForm from '../components/aboutForm';
+import AboutForm from '../../components/aboutForm';
 
 export default function About() {
     return (
