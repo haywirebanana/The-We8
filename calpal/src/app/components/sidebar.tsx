@@ -58,7 +58,7 @@ export default function Sidebar() {
     const data = ['Dashboard', 'Activities', 'Journal', 'Settings'];
 
     return (
-        <div className="h-dvh w-64 bg-white">
+        <div className="h-dvh bg-white">
             <div className="flex flex-col justify-center items-center">
                 <div>
                     <Image src="/logo.png" width={150} height={150} alt="lgog"/>
