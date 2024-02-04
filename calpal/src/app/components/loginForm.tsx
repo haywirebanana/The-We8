@@ -3,14 +3,14 @@ import { useState, useEffect } from "react";
 import Field from "./field";
 import Button from "./button";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
+ 
 
 const LoginPage = () => {
+  const router = useRouter()
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const handleSubmit = () => {
-    
-  };
 
   return (
     <div>
@@ -29,7 +29,7 @@ const LoginPage = () => {
           onChange={setPassword}
           placeholderText="Enter your password"
         />
-        <Link href="/dashboard">Submit</Link>
+        <Button buttonText="Submit" onClick={() => router.push('/dashboard')} />
       </div>
     </div>
   );

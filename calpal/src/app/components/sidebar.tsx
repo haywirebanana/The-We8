@@ -5,10 +5,10 @@ import Link from 'next/link';
 export default function Sidebar() {
     
 
-    const data = [{title:'Dashboard', url:'/dashboard'}, {title:'Activities', url:'/activities'}, {title:'Journal', url:'/dashboard'}];
+    const data = [{title:'Dashboard', url:'/dashboard'}, {title:'Activities', url:'/activities'}, {title:'Journal', url:'/journal'}];
 
     return (
-        <div className="h-dvh bg-white">
+        <div className="bg-white">
             <div className="flex flex-col justify-center items-center">
                 <div>
                     <Image src="/logo.png" width={150} height={150} alt="lgog"/>

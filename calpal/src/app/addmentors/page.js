@@ -25,11 +25,10 @@ export default function Login() {
       let currentUserIn = await getCurrentUserData();
       let ranked = rankMostMatchingEntries(data, currentUserIn);
       setAvailableMentors(ranked);
-      console.log("here");
-      console.log(ranked);
     };
     getData();
   }, []);
+
   return (
     <div className="flex flex-col items-center justify-center w-full flex-1 min-h-screen flex-col bg-green">
       <div className="bg-light-cream rounded-xl p-12 w-2/3">
@@ -52,12 +51,6 @@ export default function Login() {
           </div>
         ))}
       </div>
-      <button
-        style={{ color: "blue" }}
-        onClick={() => window.location.replace("http://localhost:3000/dashboard")}
-      >
-        Continue!
-      </button>
     </div>
   );
 }
