@@ -57,7 +57,7 @@ const AboutForm = () => {
         <div>
             {step === 1 && (
                 <div className="flex flex-col items-center justify-center w-full flex-1 flex-col bg-light-cream">
-                    <h1 className='font-serif text-2xl font-normal'>Tell us about you!</h1>
+                    <h1 className='font-serif text-left text-2xl font-normal'>Tell us about you!</h1>
                     <Field labelName='Date of birth' fieldType='date' fieldValue={dateOfBirth} onChange={setDateOfBirth} placeholderText='Enter your date of birth' />
                     <div className='flex flex-row w-full gap-4' >
                         <Dropdown labelName='Gender identity' options={['Woman', 'Man', 'Transgender/Trans woman', 'Transgender/Trans man', 'Non-binary', 'Prefer not to say']} fieldValue={gender} onChange={setGender} />
