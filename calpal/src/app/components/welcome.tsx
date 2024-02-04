@@ -1,12 +1,11 @@
-'use client'
-import Button from './button';
-import Link from 'next/link';
+"use client";
+import Button from "./button";
+import Link from "next/link";
 
 export default function Welcome() {
-
-    const handleSubmit = () => {
-        //to be implemented
-    };
+  const handleSubmit = () => {
+    //to be implemented
+  };
 
 
     return (
@@ -37,9 +36,6 @@ export default function Welcome() {
                         </h3>
                     </div>
                 </div>
-                {/* <div className="w-1/2">
-                    we will add something here
-                </div> */}
-        </div>
-    );
+    </div>
+  );
 }

@@ -1,5 +1,5 @@
-'use client'
-import Form from '../components/loginForm';
+"use client";
+import Form from "../components/loginForm";
 
 export default function Login() {
     return (
@@ -10,4 +10,5 @@ export default function Login() {
                 </div>
         </div>
     );
+
 }
