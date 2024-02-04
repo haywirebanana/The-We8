@@ -26,7 +26,7 @@ export default function Welcome() {
                         </h2>
                     </div>
                     <div>
-                        <Link href="/register" className=" hover:bg-sand focus:outline-none focus:ring-4 focus:ring-blue-300 px-20 py-3 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white font-roboto rounded-3xl font-light text-3xl bg-clay hover:dark-brown">
+                        <Link href="/register" className=" hover:bg-sand focus:outline-none focus:ring-4 focus:ring-blue-300 px-20 py-3 text-center mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white font-roboto rounded-3xl font-light text-3xl bg-clay hover:dark-brown">
                             Join 
                         </Link>
 
