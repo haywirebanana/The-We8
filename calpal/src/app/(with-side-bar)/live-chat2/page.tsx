@@ -21,12 +21,12 @@ export default function LiveChat() {
 
 
     const containerStyle = {
-        maxWidth: "600px",
-        margin: "auto",
-        padding: "20px",
+        width: "100%",
+        minHeight: "70%",
+        padding: "3rem",
         border: "1px solid #ccc",
         borderRadius: "5px",
-        backgroundColor: "#fff",
+        backgroundColor:"#fff",
     };
 
     const headingStyle = {
@@ -36,8 +36,8 @@ export default function LiveChat() {
     };
 
     const messageAreaStyle = {
-        maxHeight: "400px",
         overflowY: "scroll",
+        height:'80%',
         border: "1px solid #ddd",
         padding: "10px",
         marginBottom: "10px",
