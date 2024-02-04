@@ -111,7 +111,7 @@ export default function LiveChat() {
 
             {/* Messaging container */}
             <div style={containerStyle}>
-                <h2 style={headingStyle}>Messaging with Celine </h2>
+                <h2 style={headingStyle}>Messaging with Armin </h2>
 
                 {/* Message area */}
                 <div style={messageAreaStyle}>
