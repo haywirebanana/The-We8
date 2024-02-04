@@ -5,6 +5,7 @@ import Button from './button';
 import Dropdown from './dropdownField'
 import Divider from './divideLine'
 import CheckboxField from './checkboxField'
+import Link from 'next/link';
 
 const AboutForm = () => {
     const [step, setStep] = useState(1);
@@ -95,7 +96,7 @@ const AboutForm = () => {
 
                     <div className='flex flex-row w-full gap-4 justify-center' >
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
-                        <Button buttonText="Submit" onClick={handleSubmit} />
+                        <Link href="/dashboard">Submit</Link>
                     </div>
 
                 </div>
