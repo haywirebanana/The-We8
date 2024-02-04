@@ -2,10 +2,10 @@
 import Image from "next/image";
 
 import Sidebar from "../../../components/sidebar";
-const name = 'Explore 17th Avenue',
-      description = 'Nestled in the heart of Calgary, 17th Avenue SW boasts a vibrant and dynamic atmosphere, offering a fusion of culture, cuisine, and commerce. Lined with trendy boutiques, cozy cafes, and eclectic restaurants, this bustling street pulses with energy day and night, attracting locals and visitors alike. From leisurely strolls to indulgent dining experiences, 17th Ave promises something for everyone, making it a quintessential destination in the city\'s vibrant landscape.'
+const name = 'Crescent Heights Lookout',
+      description = 'Nestled in the heart of Calgary, Crescent Heights offers a vibrant blend of urban living and natural beauty. Perched atop the city\'s escarpment, this eclectic neighborhood boasts stunning views of the downtown skyline and the majestic Rocky Mountains. Lined with tree-canopied streets and historic homes, Crescent Heights exudes charm and character at every turn. Its diverse community celebrates a rich tapestry of cultures, reflected in its bustling cafes, boutique shops, and vibrant arts scene. With its proximity to parks, pathways, and cultural landmarks, Crescent Heights invites residents and visitors alike to immerse themselves in its unique blend of serenity and excitement.'
 
-export default function Seventeenth() {
+export default function Crescent() {
     return (
         <div className="flex flex-row w-full flex-1 min-h-screen bg-white">
             <Sidebar />

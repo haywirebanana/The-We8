@@ -2,10 +2,10 @@
 import Image from "next/image";
 
 import Sidebar from "../../../components/sidebar";
-const name = 'Explore 17th Avenue',
-      description = 'Nestled in the heart of Calgary, 17th Avenue SW boasts a vibrant and dynamic atmosphere, offering a fusion of culture, cuisine, and commerce. Lined with trendy boutiques, cozy cafes, and eclectic restaurants, this bustling street pulses with energy day and night, attracting locals and visitors alike. From leisurely strolls to indulgent dining experiences, 17th Ave promises something for everyone, making it a quintessential destination in the city\'s vibrant landscape.'
+const name = 'Visit Banff National Park',
+      description = 'Nestled within the stunning Canadian Rockies, Banff is a picturesque town that captivates visitors with its breathtaking natural beauty and charming mountain atmosphere. Surrounded by towering peaks, pristine lakes, and dense forests, Banff offers a paradise for outdoor enthusiasts and adventurers alike. From exhilarating hikes along scenic trails to tranquil moments by turquoise lakes, Banff beckons travelers to explore its awe-inspiring landscapes and immerse themselves in the splendor of nature.'
 
-export default function Seventeenth() {
+export default function Banff() {
     return (
         <div className="flex flex-row w-full flex-1 min-h-screen bg-white">
             <Sidebar />
