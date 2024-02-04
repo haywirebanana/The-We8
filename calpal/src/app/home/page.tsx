@@ -10,11 +10,16 @@ export default function Home() {
 
         <div className="flex flex-row min-h-screen">
             <Sidebar />
-            <div className="w-full h-full">
-                <div className="flex items-center justify-center bg-green">
+            <div className="w-full h-dvh">
+                <div className="flex h-1/3 items-center justify-center bg-green">
                     <header className="text-white font-serif text-4xl font-normal">Name of Program</header>
                 </div>
-                <Mentor />
+                <div className="flex h-2/3  bg-white justify-center">
+                    <header className="text-black font-serif text-4xl font-normal">
+                        Mentors
+                    </header>
+
+                </div>
             </div>
             <div>
                 <List />
