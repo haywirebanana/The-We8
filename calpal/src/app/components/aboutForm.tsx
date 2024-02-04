@@ -11,6 +11,10 @@ const AboutForm = () => {
     const [gender, setGender] = useState('');
     const [pronouns, setPronouns] = useState('');
 
+    const EMPLOYMENT_DATA = ['Education', 'Health Care', 'Business Administration', 'Engineering', 'Arts', 'Human Resources', 'Maintenance Mechanic', 'Science and Technology',
+                            'Transportation', 'Accountant', 'Communications', 'Construction', 'Marketing Manager', 'Administrative Assistant', 'Consulting',
+                            'Consulting', 'Landscape Architect'];
+
     const [fieldName, setFieldName] = useState('');
     // const [fieldName, setFieldName] = useState('');
     // const [fieldName, setFieldName] = useState('');
@@ -65,7 +69,7 @@ const AboutForm = () => {
 
             {/* Add more steps here */}
 
-            {step > 1 && (
+            {step === 2 && (
                 <div className="flex flex-col items-center justify-center w-full flex-1 px-40 flex-col bg-light-cream">
                     <h1 className=''>Tell us about you!</h1>
                     <Field labelName='Date of birth' fieldType='date' fieldValue={dateOfBirth} onChange={setDateOfBirth} placeholderText='Enter your date of birth' />
@@ -80,7 +84,16 @@ const AboutForm = () => {
             )}
 
             {step === 3 && (
-                <Button buttonText="Submit" onClick={handleSubmit} />
+                <div className="flex flex-col items-center justify-center w-full flex-1 px-40 bg-light-cream">
+                    <h1 className=''>Tell us about your GOALS!</h1>
+                    <h3>This information will ONLY be used to help us find your best match1</h3>
+                    <Field labelName='Employment' fieldType='checkbox' fieldValue={dateOfBirth} onChange={setDateOfBirth} placeholderText='Enter your date of birth' />
+
+                    <Divider />
+                    <Button buttonText="Previous" onClick={handlePreviousStep} />
+                    <Button buttonText="Next" onClick={handleNextStep} />
+                    <Button buttonText="Submit" onClick={handleSubmit} />
+                </div>
             )}
         </div>
     );
