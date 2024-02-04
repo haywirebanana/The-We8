@@ -18,7 +18,7 @@ export default function Field({ labelName, fieldType, fieldValue, onChange, plac
       <label className="block text-sm font-medium text-gray-900">
         {labelName}
       </label>
-      <div className="relative mt-1 rounded-md shadow-sm">
+      <div className="relative mt-1 rounded-md">
         <input
           type={fieldType}
           name="label"
