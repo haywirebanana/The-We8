@@ -2,15 +2,13 @@
 
 const Card = () => {
     return (
-        <div className='flex flex-row'>
-            <div
-                className="rounded-3xl bg-clay mx-10"
-                style={{
-                    width: "150px",
-                    height: "150px",
-                }}
-            ></div>
-        </div>
+        <div
+            className="rounded-3xl bg-sand mx-10"
+            style={{
+                width: "150px",
+                height: "150px",
+            }}
+        ></div>
     )
 }
 export default Card
