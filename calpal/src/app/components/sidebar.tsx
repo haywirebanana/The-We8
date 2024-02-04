@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Sidebar() {
     
 
-    const data = [{title:'Dashboard', url:'/dashboard'}, {title:'Activities', url:'/activities'}, {title:'Journal', url:'/dashboard'}, {title: 'Chats', url:'live-chat'}];
+    const data = [{title:'Dashboard', url:'/dashboard'}, {title:'Activities', url:'/activities'}, {title:'Journal', url:'/dashboard'}];
 
     return (
         <div className="h-dvh bg-white">
