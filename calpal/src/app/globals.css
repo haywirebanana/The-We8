@@ -35,8 +35,16 @@ body {
   }
 }
 
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+.card {
+  background: white;
+  width: 300px; /* Set a fixed width for the card */
+  border-radius: 10px; /* Apply rounded edges to the card */
+}
+
+.card-img-top {
+  width: 100%; /* Ensure the image fills the width of the card */
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  border-top-left-radius: 10px; /* Apply rounded edges to the top-left corner */
+  border-top-right-radius: 10px; /* Apply rounded edges to the top-right corner */
+}
