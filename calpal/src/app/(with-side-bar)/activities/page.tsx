@@ -3,7 +3,9 @@ import Image from "next/image";
 
 import Activity from "../../components/activities";
 import Sidebar from "../../components/sidebar";
-export default function Activities() {
+
+
+export default function Activities(link:string) {
     return (
         <div className="flex flex-row w-full flex-1 min-h-screen bg-green">
                     <Sidebar />
@@ -13,7 +15,7 @@ export default function Activities() {
                             alt="banner"
                             width={2000}
                             height={300}>    
-
+                            href='link'
                         </Image>
                         <div className="w-full justify-center">
                         <Activity />

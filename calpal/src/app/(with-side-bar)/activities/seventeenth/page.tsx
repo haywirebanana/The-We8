@@ -21,14 +21,7 @@ export default function Seventeenth() {
                     <div
                         className=" rounded-3xl bg-green w-full"
                     >
-                        <iframe
-  width="600"
-  height="450"
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvEepPs1FTXSzvKKp3m2Pzaqpd4r1-188
-    &q=Space+Needle,Seattle+WA">
-</iframe>
+
                         <div className="w-full full-h p-4 text-white">
                             <h1 className='font-serif text-white text-left text-5xl font-normal'>{name}</h1>
                             <br></br>
@@ -39,6 +32,14 @@ export default function Seventeenth() {
                                 {description}
                             </h2>
                         </div>
+                        <iframe
+                            width="90%"
+                            height="450"
+                            loading="lazy"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyFovAqLmx6V6T0xHEDO9LnPA60CI4A_w
+    &q=17th+Avenue,Calgary+AB">
+                        </iframe>
+                        
                     </div>
                 </div>
             </div>
