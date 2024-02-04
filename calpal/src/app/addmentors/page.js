@@ -54,7 +54,7 @@ export default function Login() {
       </div>
       <button
         style={{ color: "blue" }}
-        onClick={() => window.location.replace("http://localhost:3000/")}
+        onClick={() => window.location.replace("http://localhost:3000/dashboard")}
       >
         Continue!
       </button>

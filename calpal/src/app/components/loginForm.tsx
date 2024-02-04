@@ -2,16 +2,14 @@
 import { useState, useEffect } from "react";
 import Field from "./field";
 import Button from "./button";
-
-import { CheckLogin } from "../api/getUsers";
+import Link from "next/link";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = () => {
-    console.log(email);
-    let success = CheckLogin(email, password);
+    
   };
 
   return (
@@ -31,7 +29,7 @@ const LoginPage = () => {
           onChange={setPassword}
           placeholderText="Enter your password"
         />
-        <Button buttonText="Submit" onClick={handleSubmit} />
+        <Link href="/dashboard">Submit</Link>
       </div>
     </div>
   );
