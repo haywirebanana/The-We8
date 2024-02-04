@@ -9,14 +9,14 @@ import { useState } from "react";
 export default function LiveChat() {
     const [inputText, setInputText] = useState(""); // State to manage input text
     const [messages, setMessages] = useState([
-        { id: 1, author: "You", text: "Hi there! I need some advice about education." },
+        { id: 1, author: "You", text: "Hi there! I need some advice about things to do with my family." },
         { id: 2, author: "Armin", text: "Of course! I'm happy to help. What specific advice are you looking for?" },
-        { id: 3, author: "You", text: "I'm wondering about the best schools in my area for my child. Any recommendations?" },
+        { id: 3, author: "You", text: "I'm wondering about some places to visit around town. Any recommendations?" },
         { id: 4, author: "Armin", text: "Sure, I can help with that. Could you let me know which area you're located in?" },
-        { id: 5, author: "You", text: "I'm in the XYZ neighborhood. Looking for good elementary schools." },
+        { id: 5, author: "You", text: "I'm in the Royal Oak neighborhood, but I'm willing to drive around." },
         { id: 6, author: "Armin", text: "Got it. I'll check and get back to you with some recommendations shortly." },
         { id: 7, author: "Armin", text: "Look at your recommendations in your journal! I sent some links"}
-        // You can continue the conversation with Armin providing school recommendations.
+        // You can continue the conversation with Armin providing school recommendations.  
     ]);
 
 

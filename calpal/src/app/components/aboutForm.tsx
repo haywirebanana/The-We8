@@ -76,10 +76,10 @@ const AboutForm = () => {
             {step > 1 && step < 3 && (
                 <div className="flex flex-col items-center justify-center w-full flex-1 flex-col bg-light-cream">
                     <h1 className='font-serif text-2xl font-normal'>Tell us about your professional background!</h1>
-                    <Field labelName='Education level' fieldType='text' fieldValue={education} onChange={setEducation} placeholderText='What is your highest level of education?' />
-                    <Field labelName='Employment status' fieldType='text' fieldValue={employmentStatus} onChange={setEmploymentStatus} placeholderText='What is your employment status?' />
+                    {/* <Field labelName='Education level' fieldType='text' fieldValue={education} onChange={setEducation} placeholderText='What is your highest level of education?' /> */}
+                    <Dropdown labelName='Education level' options={['High School Graduate', 'Bachelor\'s Degree', 'Master\'s Degree', 'Other']} fieldValue={education} onChange={setEducation} />
+                    <Dropdown labelName='Employment status' options={['Employed', 'Student', 'Unemployed', 'Retired']} fieldValue={employmentStatus} onChange={setEmploymentStatus} />
                     <Field labelName='Field of work' fieldType='text' fieldValue={fieldOfWork} onChange={setFieldOfWork} placeholderText='What industry do you work in?' />
-                    <Field labelName='Job title' fieldType='text' fieldValue={jobTitle} onChange={setJobTitle} placeholderText='What is your job title?' />
                     <div className='flex flex-row w-full gap-4 justify-center' >
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
                         <Button buttonText="Next" onClick={handleNextStep} />
@@ -98,7 +98,7 @@ const AboutForm = () => {
 
                     <div className='flex flex-row w-full gap-4 justify-center' >
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
-                        <Button buttonText="Submit" onClick={() => router.push('/dashboard')} />
+                        <Button buttonText="Submit" onClick={() => router.push('/addmentors')} />
                     </div>
 
                 </div>

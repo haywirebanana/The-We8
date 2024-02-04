@@ -23,7 +23,7 @@ export default function Sidebar() {
                         </div>
                     ))}
                     <Link href="/" className=" hover:bg-sand focus:outline-none focus:ring-4 focus:ring-blue-300 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white font-roboto h-14 w-48 rounded-3xl font-light text-2xl bg-clay hover:dark-brown">
-                        Sign Out
+                        Log Out
                     </Link>
                 </div>
             </div>

@@ -48,7 +48,7 @@ export default function How() {
               textAlign: "center",
             }}
           >
-            Join CalPal{" "}
+            <a href='/register'>Join CalPal</a>{" "}
           </p>
         </div>
         <div style={{ position: "relative", display: "inline" }}>

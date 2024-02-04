@@ -1,12 +1,12 @@
 "use client";
-import Form from "../components/loginForm";
+import Form from "../../components/loginForm";
 import { useState, useEffect } from "react";
 import {
   GetUsers,
   rankMostMatchingEntries,
   getCurrentUserData,
-} from "../api/getUsers";
-import { addMentor } from "../api/addMentor";
+} from "../../api/getUsers";
+import { addMentor } from "../../api/addMentor";
 
 const itemList = [
   { id: 1, text1: "Text 1-1", text2: "Text 1-2" },
@@ -38,8 +38,7 @@ export default function Login() {
         {availableMentors.map((item, index) => (
           <div style={{ color: "black" }} key={index}>
             <span>
-              First Name: {item.object.firstName}, Last Name:{" "}
-              {item.object.lastName}, Compatency Score: {item.score}
+              {item.object.firstName}, {item.object.lastName}, Match Score: {item.score}
             </span>
             <button
               style={{ color: "red", paddingLeft: 30 }}
