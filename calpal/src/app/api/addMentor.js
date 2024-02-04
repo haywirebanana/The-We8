@@ -13,4 +13,5 @@ export const addMentor = async (mentorId) => {
   await updateDoc(userRef, {
     mentors: arrayUnion(mentorId),
   });
+  window.location.replace("http://localhost:3000/dashboard");
 };

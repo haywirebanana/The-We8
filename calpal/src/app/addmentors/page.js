@@ -44,6 +44,7 @@ export default function Login() {
             <button
               style={{ color: "red", paddingLeft: 30 }}
               onClick={() => addMentor(item.object.id)}
+              href='/dashboard'
             >
               {" "}
               Add As Mentor

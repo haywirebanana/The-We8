@@ -22,6 +22,14 @@ export default function Seventeenth() {
                     <div
                         className=" rounded-3xl bg-green w-full"
                     >
+                        <iframe
+  width="600"
+  height="450"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvEepPs1FTXSzvKKp3m2Pzaqpd4r1-188
+    &q=Space+Needle,Seattle+WA">
+</iframe>
                         <div className="w-full full-h p-4 text-white">
                             <h1 className='font-serif text-white text-left text-5xl font-normal'>{name}</h1>
                             <p>{pronouns}</p>
