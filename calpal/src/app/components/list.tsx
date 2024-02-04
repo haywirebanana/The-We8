@@ -5,7 +5,7 @@ export default function List() {
     const data = ['Dashboard', 'Activities', 'Journal'];
 
     return (
-        <div className="h-dvh w-80 bg-white">
+        <div className="h-dvh w-80 bg-white pt-4">
                 <div className="flex flex-col justify-end px-2">
                     {data.map((item, index) => (
                         <div key={index}>

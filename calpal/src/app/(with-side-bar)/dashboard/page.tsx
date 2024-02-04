@@ -14,11 +14,11 @@ export default function Activities() {
                 <div className="flex h-1/3 items-center justify-center bg-green">
                     <header className="text-white font-serif text-4xl font-normal">Name of Program</header>
                 </div>
-                <div className="flex h-2/3  bg-white justify-center">
-                        <Card></Card>
-                        <Card></Card>
-                        <Card></Card>
-                        <Card></Card>
+                <div className="flex flex-wrap overscroll-auto justify-center w-full h-2/3 py-8 bg-white gap-2">
+                <Card name="armin" pronouns="she/her" description="First-generation Punjabi Canadian, wants to make a difference."></Card>
+                <Card name="celine" pronouns="she/her" description="First-generation Chinese Canadian, local food expert."></Card>
+                <Card name="ryan" pronouns="he/him" description="First generation Filipino Canadian, Educational Assistant"></Card>
+                <Card name="haseeb" pronouns="he/him" description="First generation Pakistani Canadian, Street Photographer"></Card>
                 </div>
             </div>
             <div>
