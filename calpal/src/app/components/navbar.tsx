@@ -14,7 +14,7 @@ const Navbar = () => {
             case '/login':
                 return 'Register';
             case '/about':
-                return 'Contact Us';
+                return 'Dashboard';
             default:
                 return 'Login';
         }
@@ -27,9 +27,9 @@ const Navbar = () => {
             case '/login':
                 return '/register';
             case '/about':
-                return 'Contact Us';
+                return '/dashboard';
             default:
-                return 'Login';
+                return '/login';
         }
     };
 
