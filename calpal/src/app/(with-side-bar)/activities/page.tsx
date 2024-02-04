@@ -15,7 +15,6 @@ export default function Activities(link:string) {
                             alt="banner"
                             width={2000}
                             height={300}>    
-                            href='link'
                         </Image>
                         <div className="w-full justify-center">
                         <Activity />
