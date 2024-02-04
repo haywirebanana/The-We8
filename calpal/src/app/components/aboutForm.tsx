@@ -70,7 +70,6 @@ const AboutForm = () => {
                     <Button buttonText="Next" onClick={handleNextStep} />
                 </div>
             )}
-
             {step > 1 && step < 3 && (
                 <div className="flex flex-col items-center justify-center w-full flex-1 flex-col bg-light-cream">
                     <h1 className='font-serif text-2xl font-normal'>Tell us about your professional background!</h1>
@@ -81,6 +80,7 @@ const AboutForm = () => {
                     <div className='flex flex-row w-full gap-4 justify-center' >
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
                         <Button buttonText="Next" onClick={handleNextStep} />
+
                     </div>
                 </div>
             )}
@@ -97,6 +97,7 @@ const AboutForm = () => {
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
                         <Button buttonText="Submit" onClick={handleSubmit} />
                     </div>
+
                 </div>
             )}
         </div>
