@@ -12,8 +12,6 @@ const LoginPage = () => {
   const handleSubmit = () => {
     console.log(email);
     let success = CheckLogin(email, password);
-
-    window.location.replace("http://localhost:3000/");
   };
 
   return (

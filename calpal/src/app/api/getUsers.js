@@ -1,5 +1,7 @@
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../config/firebase";
+import { globalUserId } from "../constants/globalUser";
+import { doc } from "firebase/firestore";
 
 export const GetUsers = async () => {
   try {
@@ -28,6 +30,9 @@ export const CheckLogin = async (email, password) => {
       console.log(user);
       if (users[user].password == password && users[user].email == email) {
         console.log("Logged In");
+        globalUserId.id = users[user].id;
+        console.log(globalUserId.id);
+        window.location.replace("http://localhost:3000/");
 
         return true;
       }
@@ -57,7 +62,23 @@ export function rankMostMatchingEntries(objectsList, testObject) {
   similarityScores.sort((a, b) => b.score - a.score); // Sort in descending order
 
   // Step 3: Splice the top 10
-  const top10MatchingEntries = similarityScores.slice(0, 10);
+  const top10MatchingEntries = similarityScores.slice(0, 3);
 
   return top10MatchingEntries;
 }
+
+export const getCurrentUserData = async () => {
+  // Define the data to be added
+
+  // Add the data to the "users" collection
+  let allUsers = await GetUsers();
+  console.log(globalUserId.id);
+  for (let user in allUsers) {
+    console.log(allUsers[user]);
+    if (allUsers[user].id === "userId") {
+      console.log("worker");
+      return allUsers[user];
+    }
+  }
+  return null;
+};

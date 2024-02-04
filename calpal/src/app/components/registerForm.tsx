@@ -15,9 +15,16 @@ const RegisterPage = () => {
   const handleSubmit = () => {
     //to be implemented
     console.log("Worked");
+    const formData = {
+      firstName: firstName,
+      lastName: lastName,
+      address: address,
+      email: email,
+      password: password,
+      mentors: [],
+    };
 
-    addDataToFirestore();
-    window.location.replace("http://localhost:3000/");
+    addDataToFirestore(formData);
   };
 
   return (
