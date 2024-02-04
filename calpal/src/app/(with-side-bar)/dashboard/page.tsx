@@ -1,7 +1,6 @@
 'use client'
 
-import Banner from "../../components/banner";
-import Mentor from "../../components/mentor";
+
 import List from "../../components/list";
 import Sidebar from "../../components/sidebar"
 import Card from "../../components/squareCard"
@@ -12,7 +11,7 @@ export default function Activities() {
             <Sidebar />
             <div className="w-full h-dvh">
                 <div className="flex h-1/3 items-center justify-center bg-green">
-                    <header className="text-white font-serif text-4xl font-normal">Name of Program</header>
+                    <img src='/images/banners/mentors.png' ></img>
                 </div>
                 <div className="flex flex-wrap overscroll-auto justify-center w-full h-2/3 py-8 bg-white gap-2">
                 <Card name="armin" pronouns="she/her" description="First-generation Punjabi Canadian, wants to make a difference."></Card>
