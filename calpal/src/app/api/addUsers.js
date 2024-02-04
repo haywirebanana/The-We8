@@ -11,5 +11,5 @@ export const addDataToFirestore = async (data) => {
   globalUserId.id = docRef.id;
   console.log("Document written with ID: ", docRef.id);
   addMentor("userId");
-  window.location.replace("http://localhost:3000/addmentors");
+  window.location.replace("http://localhost:3000/about");
 };

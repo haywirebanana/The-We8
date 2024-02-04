@@ -40,6 +40,7 @@ export default function Login() {
           <div>
             {"Armin"} {"Sandhu"}
             {availableMentors.length > 0 && `, Compatency Score: 5`}
+
           </div>
           <div>
             {"Haseeb"} {"Khan"}

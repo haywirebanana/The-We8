@@ -96,7 +96,7 @@ const AboutForm = () => {
 
                     <div className='flex flex-row w-full gap-4 justify-center' >
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
-                        <Link href="/dashboard">Submit</Link>
+                        <Link href="/addmentors">Submit</Link>
                     </div>
 
                 </div>

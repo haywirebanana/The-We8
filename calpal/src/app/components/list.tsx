@@ -1,22 +1,38 @@
 'use client'
 import Image from "next/image";
+import Card from './card';
 
-export default function List() {
-    const data = ['Dashboard', 'Activities', 'Journal'];
+const Seventeenth = "/images/activity/17.jpg";
+const Banff = "/images/activity/banff.jpg";
+
+interface ActivitiesProps {
+    title: string;
+    image: string;
+    onChange?: (value: string) => void;
+}
+
+export default function Activities() {
+
+    const data: ActivitiesProps[] = [
+        {
+            title: 'Night out on 17th Ave!',
+            image: Seventeenth
+        },
+        {
+            title: 'Visit Banff National Park',
+            image: Banff
+        },
+    ];
+
 
     return (
-        <div className="h-dvh w-80 bg-white pt-4">
-                <div className="flex flex-col justify-end px-2">
-                    {data.map((item, index) => (
-                        <div key={index}>
-                            <div className="flex flex-row">
-                                <span style={{ marginLeft: '16px' }}>{item}</span>
-                                <button>+</button>
-                            </div>
-                            <div className="w-full my-5 border-t border-neutral-100 opacity-100 dark:opacity-50"></div>
-                        </div>
-                    ))}
-                </div>
+        <div className="flex flex-col h-full justify-center text-center font-montserrat text-4xl bg-sand px-2">
+            <h1 className="text-white">My Activities</h1>
+            <div className="flex flex-col py-1 justify-evenly">
+                {data.map((activity, index) => (
+                    <Card key={index} title={activity.title} image={activity.image} />
+                ))}
+            </div>
         </div>
-    );
-}
+    )
+};
