@@ -32,13 +32,16 @@ export default function Seventeenth() {
                                 {description}
                             </h2>
                         </div>
-                        <iframe
-                            width="90%"
-                            height="450"
-                            loading="lazy"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyFovAqLmx6V6T0xHEDO9LnPA60CI4A_w
-    &q=17th+Avenue,Calgary+AB">
-                        </iframe>
+                        <div className="flex flex-row justify-center pb-8">
+                            <iframe
+                                width="90%"
+                                height="450"
+                                loading="lazy"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyFovAqLmx6V6T0xHEDO9LnPA60CI4A_w
+        &q=17th+Avenue,Calgary+AB">
+                            </iframe>
+
+                        </div>
                         
                     </div>
                 </div>

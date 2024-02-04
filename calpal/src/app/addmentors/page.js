@@ -39,7 +39,7 @@ export default function Login() {
           <div style={{ color: "black" }} key={index}>
             <span>
               First Name: {item.object.firstName}, Last Name:{" "}
-              {item.object.firstName}, Compatency Score: {item.score}
+              {item.object.lastName}, Compatency Score: {item.score}
             </span>
             <button
               style={{ color: "red", paddingLeft: 30 }}

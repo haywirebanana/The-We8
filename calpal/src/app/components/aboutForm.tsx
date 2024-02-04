@@ -6,6 +6,7 @@ import Dropdown from './dropdownField'
 import Divider from './divideLine'
 import CheckboxField from './checkboxField'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const AboutForm = () => {
     const [step, setStep] = useState(1);
@@ -21,6 +22,7 @@ const AboutForm = () => {
     const [fieldOfWork, setFieldOfWork] = useState('');
     const [jobTitle, setJobTitle] = useState('');
     const [employmentGoals, setEmploymentGoals] = useState('');
+    const router = useRouter()
 
     // const [fieldName, setFieldName] = useState('');
     // const [fieldName, setFieldName] = useState('');
@@ -96,7 +98,7 @@ const AboutForm = () => {
 
                     <div className='flex flex-row w-full gap-4 justify-center' >
                         <Button buttonText="Previous" onClick={handlePreviousStep} />
-                        <Link href="/addmentors">Submit</Link>
+                        <Button buttonText="Submit" onClick={() => router.push('/dashboard')} />
                     </div>
 
                 </div>

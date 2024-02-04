@@ -28,9 +28,11 @@ export default function Activities() {
     return (
         <div className="flex flex-col h-full justify-center text-center font-montserrat text-4xl bg-sand px-2">
             <h1 className="text-white">My Activities</h1>
-            <div className="flex flex-col py-1 justify-evenly">
+            <div className="flex flex-col py-1  justify-evenly">
                 {data.map((activity, index) => (
-                    <Card key={index} title={activity.title} image={activity.image} />
+                    <div className="py-2">
+                        <Card key={index} title={activity.title} image={activity.image} />
+                    </div>
                 ))}
             </div>
         </div>

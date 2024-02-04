@@ -31,6 +31,7 @@ export default function Crescent() {
                                 {description}
                             </h2>
                         </div>
+                        <div className="flex flex-row justify-center pb-8">
                         <iframe
                             width="90%"
                             height="450"
@@ -38,6 +39,7 @@ export default function Crescent() {
                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyFovAqLmx6V6T0xHEDO9LnPA60CI4A_w
     &q=Crescent+Heights+Lookout+Point,Calgary+AB">
                         </iframe>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -60,25 +60,18 @@ export default function Activities() {
           />
         </div>
 
-        {/* Mentor Recommendations */}
-        <div className="mt-8">
+        <div className="py-8 mx-4">
           <h2 className="text-2xl font-semibold mb-4">Mentor Recommendations</h2>
           {/* Mentor A Recommendations */}
           <ul className="list-disc pl-4">
-            <li>Mentor A Recommends: <a href="https://ineed-help.org/" target="_blank" rel="noopener noreferrer">https://ineed-help.org/</a></li>
+            <li>Celine Recommends: <a href="https://ineed-help.org/" target="_blank" rel="noopener noreferrer">https://ineed-help.org/</a></li>
           </ul>
 
           {/* Mentor B Recommendations */}
           <ul className="list-disc pl-4 mt-4">
-            <li>Mentor B Recommends: <a href="https://example.com/mentor-b" target="_blank" rel="noopener noreferrer">https://example.com/mentor-b</a></li>
-            <li>Mentor B Recommends: Don't Stress! Everything is gonna be okay</li>
-
-          </ul>
-
-          {/* Mentor C Recommendations */}
-          <ul className="list-disc pl-4 mt-4">
-            <li>Mentor C Recommends: We Love you!!!</li>
-
+            <li>Armin Recommends: <a href="/activities/seventeenth" target="_blank" rel="noopener noreferrer">Activity in Calgary</a></li>
+            <li>Armin Recommends: <a href="/activities/banff" target="_blank" rel="noopener noreferrer">Activity in Banff</a></li>
+            <li>Armin Recommends: Don't Stress! Everything is gonna be okay</li>
           </ul>
         </div>
       </div>

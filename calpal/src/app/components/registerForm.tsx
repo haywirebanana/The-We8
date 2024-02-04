@@ -3,6 +3,7 @@ import { useState } from "react";
 import Field from "./field";
 import Button from "./button";
 import { addDataToFirestore } from "../api/addUsers";
+import { useRouter } from 'next/navigation'
 
 const RegisterPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -11,21 +12,22 @@ const RegisterPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const router = useRouter()
 
-  const handleSubmit = () => {
-    //to be implemented
-    console.log("Worked");
-    const formData = {
-      firstName: firstName,
-      lastName: lastName,
-      address: address,
-      email: email,
-      password: password,
-      mentors: [],
-    };
+  // const handleSubmit = () => {
+  //   //to be implemented
+  //   console.log("Worked");
+  //   const formData = {
+  //     firstName: firstName,
+  //     lastName: lastName,
+  //     address: address,
+  //     email: email,
+  //     password: password,
+  //     mentors: [],
+  //   };
 
-    addDataToFirestore(formData);
-  };
+  //   addDataToFirestore(formData);
+  // };
 
   return (
     <div>
@@ -72,7 +74,7 @@ const RegisterPage = () => {
           onChange={setConfirmPassword}
           placeholderText="Re-enter your secure password"
         />
-        <Button buttonText="Submit" onClick={handleSubmit} />
+        <Button buttonText="Submit" onClick={() => router.push('/about')} />
       </div>
     </div>
   );

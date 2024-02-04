@@ -18,6 +18,7 @@ const Zoo = "/images/activity/zoo.jpg";
 interface ActivitiesProps {
     title: string;
     image: string;
+    link: string;
     onChange?: (value: string) => void;
 }
 
@@ -26,51 +27,63 @@ export default function Activities() {
     const data: ActivitiesProps[] = [
         {
             title: 'Night out on 17th Ave!',
-            image: Seventeenth
+            image: Seventeenth,
+            link: '/activities/seventeenth'
         },
         {
             title: 'Visit Banff National Park',
-            image: Banff
+            image: Banff,
+            link: '/activities/banff'
         },
         {
             title: 'Crescent Heights Lookout',
-            image: Crescent
+            image: Crescent,
+            link: '/activities/crescent'
         },
         {
             title: 'Flicks at HighPark',
-            image: Highpark
+            image: Highpark,
+            link: '/seventeenth'
         },
         {
             title: 'Date night in Kensington',
-            image: Kensington
+            image: Kensington,
+            link: '/seventeenth'
         },
         {
             title: 'Browse at the Glenbow Museum',
-            image: Museum
+            image: Museum,
+            link: '/seventeenth'
         },
         {
             title: 'Fun day at Prairie Winds',
-            image: Prairie
+            image: Prairie,
+            link: '/seventeenth'
         },
         {
             title: 'Fine dine at Seniores',
-            image: Seniores
+            image: Seniores,
+            link: '/seventeenth'
         },
         {
             title: 'Rodeo at the Calgary Stampede',
-            image: Stampede
+            image: Stampede,
+            link: '/seventeenth'
         },
         {
             title: 'Explore at Telus spark',
-            image: Telus
+            image: Telus,
+            link: '/seventeenth'
         },
         {
             title: 'Vibe at the Calgary Tower',
-            image: Tower
+            image: Tower,
+            link: '/seventeenth'
         },
         {
             title: 'Go wild at the Zoo',
-            image: Zoo
+            image: Zoo,
+            link: '/seventeenth'
         },
     ];
 
@@ -79,7 +92,7 @@ export default function Activities() {
         <div className="flex h-full py-8 justify-center bg-green">
             <div className="grid grid-cols-3 gap-4">
                 {data.map((activity, index) => (
-                    <Card key={index} title={activity.title} image={activity.image} />
+                    <Card path={activity.link} key={index} title={activity.title} image={activity.image} />
                 ))}
             </div>
         </div>

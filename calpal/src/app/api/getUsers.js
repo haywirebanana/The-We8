@@ -50,7 +50,7 @@ export function rankMostMatchingEntries(objectsList, testObject) {
   for (const object of objectsList) {
     let score = 0;
     if (testObject.birthCountry === object.birthCountry) score += 2;
-    if (testObject.englishProfecinecy) score += 1;
+    if (testObject.englishProfecinecy === true) score += 3;
     if (testObject.employmentStatus === "Working") score += 1;
     if (testObject.ethnicity === object.ethnicity) score += 1;
 
