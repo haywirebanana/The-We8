@@ -3,10 +3,11 @@
 interface CardProps {
     name?: string;
     pronouns?: string,
+    route?: string,
     description?: string;
 }
 
-export default function Card({ name, pronouns, description }: CardProps) {
+export default function Card({ name, route, pronouns, description }: CardProps) {
     return (
         <div
             className=" rounded-3xl bg-sand mx-10"
@@ -16,7 +17,7 @@ export default function Card({ name, pronouns, description }: CardProps) {
             }}
         >
             <div className="full-w full-h p-3 text-white">
-                <h1 className='font-serif text-left text-2xl font-normal'>{name}</h1>
+                <h1 className='font-serif text-left text-2xl font-normal'><a href={route}>{name}</a></h1>
                 <p>{pronouns}</p>
                 <br></br>
                 <h2

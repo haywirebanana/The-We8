@@ -1,28 +1,26 @@
-'use client'
+"use client";
+import Image from "next/image";
 
-import Banner from "../../components/banner";
-import Mentor from "../../components/mentor";
-import List from "../../components/list";
-import Sidebar from "../../components/sidebar"
-
-export default function Dashboard() {
+import Activity from "../../components/activities";
+import Sidebar from "../../components/sidebar";
+export default function Activities() {
     return (
-        <div className="flex flex-row min-h-screen">
-            <Sidebar />
-            <div className="w-full h-dvh">
-                <div className="flex h-1/3 items-center justify-center bg-green">
-                    <header className="text-white font-serif text-4xl font-normal">Name of Program</header>
-                </div>
-                <div className="flex h-2/3  bg-white justify-center">
-                    <header className="text-black font-serif text-4xl font-normal">
-                        Mentors
-                    </header>
+        <div className="flex flex-row w-full flex-1 min-h-screen bg-green">
+                    <Sidebar />
+                    <div className="flex flex-col">
+                        <Image
+                            src='/images/banners/activities.png'
+                            alt="banner"
+                            width={2000}
+                            height={300}>    
 
-                </div>
-            </div>
-            <div>
-                <List />
-            </div>
+                        </Image>
+                        <div className="w-full justify-center overflow-scroll">
+
+                        <Activity />
+                        </div>
+                    </div>
         </div>
     );
+
 }
