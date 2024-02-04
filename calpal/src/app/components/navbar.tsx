@@ -7,12 +7,7 @@ import { usePathname} from 'next/navigation';
 const Navbar = () => {
     const pathname = usePathname()
 
-    const auth = 1;
-
     const getButtonText = () => {
-        if(auth) {
-            return 'Log Out'; 
-        }
       switch (pathname) {
         case '/register':
           return 'Login';
@@ -28,22 +23,6 @@ const Navbar = () => {
         <div className="flex-none flex flex-row justify-between bg-white py-3 pl-20">
             <div className="flex items-center w-5/6">
                 <Image src="/logo.png" width={75} height={50} alt="lgog"/>
-                {auth ? (
-                <div className="flex flex-row justify-between w-1/4">
-                    <div>
-                        <Link className="text-clay" href="/">Haseeb</Link>   
-                    </div>
-                    <div>
-                        <Link className="text-clay" href="/ryan">Ryan</Link>
-                    </div>
-                    <div>
-                        <Link className="text-clay" href="/armin">Armin</Link>
-                    </div>
-                    <div>
-                        <Link className="text-clay" href="/armin">Link</Link>
-                    </div>
-                </div>    
-                ) : ('')}
             </div>
             <div className="flex w-1/6">
                 {/* {auth ? (
